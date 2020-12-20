@@ -90,6 +90,7 @@ dependencies {
 https://user-images.githubusercontent.com/37260938/102711662-c1792300-42fe-11eb-9de6-a8cb626fed6c.mp4
 
 #### 점주용
+https://user-images.githubusercontent.com/37260938/102711765-7f041600-42ff-11eb-9c33-e9879db57970.mp4
 
 ## 사용된 도구
 * WechatDeveloper Tool
