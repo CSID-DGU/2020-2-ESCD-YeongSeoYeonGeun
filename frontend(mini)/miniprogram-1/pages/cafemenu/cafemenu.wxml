@@ -1,0 +1,46 @@
+<!--cafemenu.wxml-->
+<view class="toolbar cafemenu-top">
+  <view class="main-toolbar"> 
+    <image bindtap="back" class="toolbar-btn toolbar-back" src="../../image/ic-back.png"></image>
+  </view>
+</view>
+<view class='cafemenu-total-container'>
+  <view class="cafemenu-top-container">
+    <view class="name-and-location">
+      <view class="cafeName-text text-black1"> {{cafeName}} </view>
+      <view class="cafeLocation-text text-black3"> {{cafeLocation}} </view>
+      <image wx:if="{{favorite==0}}" class='cafe-like-btn' bindtap="manageLike" src="../../image/ic-like.png"></image>
+      <image wx:if="{{favorite==1}}" class='cafe-unlike-btn' bindtap="manageLike" src="../../image/ic-like-active.png"></image>
+    </view>
+  <view class="cafemenu-middle-line"> </view>
+</view>
+
+ <!-- 메뉴 리스트 scroll-view -->
+<block>
+<image class='cart-btn' src='../../image/ic-cart.png' style='z-index : 2;' bindtap="bindCart"></image>
+<view style='z-index :1;'>
+  <scroll-view wx:if="{{menuList.length}}" scroll-y="{{modalName==null}}" 
+  class="menu-list-scrollview page {{modalName!=null?'show':''}}" >
+    <view class="menu-list">
+      <view wx:for="{{menuList}}" bindtap="clickMenu" wx:key="index" data-item="{{item}}">
+        <view class="menu-item">
+          <!--메뉴 이름과 가격-->
+          <view class="menu-content">
+            <view class='menu-name'> {{item.menuName}} </view>
+            <view class="menu-price"> {{item.menuPrice}}{{wonText}}</view>
+          </view>
+          <!--메뉴 사진-->
+          <image class="menu-image" src="{{item.menuImage}}">
+            <!-- <text wx:if="{{!item.image}}" class="cuIcon-picfill lg text-gray"></text> -->
+          </image>
+        </view>
+        <view class="border"></view>
+      </view>
+    </view>
+  </scroll-view>
+  <view wx:else>
+    <text class="text-center text-black1">등록된 메뉴가 없습니다.</text>
+  </view>
+  </view>
+</block>
+</view>

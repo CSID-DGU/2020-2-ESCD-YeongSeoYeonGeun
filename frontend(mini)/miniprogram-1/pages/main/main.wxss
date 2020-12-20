@@ -1,0 +1,156 @@
+/**main.wxss**/
+
+.main-top{
+  background-color: #0b463c;
+}
+
+.main-toolbar{
+  display: flex;
+}
+
+.main-logo{
+  width: 80px;
+  height: 48px;
+  margin-left: 8px;
+}
+.my-page{
+  width: 48px;
+  height: 48px;
+  /* margin-left: auto; */
+  margin-left : 0px;
+  margin-right: 4px;
+}
+
+.main-container{
+  display: flex;
+  flex-direction: column;
+}
+.main-top-container {
+  display: flex;
+  flex-direction: column;
+  height: 27vh;
+  background-color: #0B463C;
+}
+
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 32px;
+}
+
+.userIntro-text {
+  color : white;
+  font-size: 20px;
+  margin-top:8px;
+  font-weight: bold;
+}
+
+.intro-text {
+  color : white;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.storeFilter-container {
+  display: flex;
+  flex-direction: row;
+  margin-left: 8px;
+  flex: 1;
+}
+
+.storeFilter-text { 
+  font-size: 12px;
+  margin-left: 10px;
+  font-weight: 300;
+  flex: none;
+  margin-top: auto;
+  margin-bottom: 10px;
+}
+
+.bar-icon{
+  width: 1px;
+  height: 10px;
+  margin-left: 10px;
+  margin-top: auto;
+  margin-bottom: 13px;
+}
+
+.map-icon{
+  width: 28px;
+  height: 28px;
+  margin-right: 12px;
+  margin-top: auto;
+  margin-bottom: 8px;
+  margin-left: auto;
+}
+
+.map-icon2{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  margin-left: 200px;
+  margin-top: 200px;
+}
+
+.list-icon{
+  width: 28px;
+  height: 28px;
+  margin-right: 12px;
+  margin-top: auto;
+  margin-bottom: 8px;
+  margin-left: auto;
+}
+
+.cafe-scroll-page{
+  height: calc(73vh - 68px);
+}
+
+.map-container{
+  display: flex;
+  flex-direction: column;
+  height: 73vh;
+}
+
+.map {
+  width: 100%;
+  flex: 1;
+}
+
+
+
+/** cafe list **/
+.cafe-item {
+  display: flex;
+  flex-direction: row;
+}
+
+.cafe-content {
+  margin-top: 14px;
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.cafe-image{
+  border-radius: 4%;
+  background-color: #cccccc;
+  width: 70px;
+  height: 70px;
+  margin: 8px 10px 8px 12px;
+}
+.cafe-distance-text{
+  color: #E5B000;
+  float: right;
+  margin-right: 12px;
+}
+
+.border{
+  height: 1px;
+  background-color: #dddddd;
+}
+
+.text-center{
+  margin: auto;
+  margin-top: 160px;
+}
